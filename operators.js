@@ -26,7 +26,7 @@
  * operator (negation) changes the sign of a number to its opposite.
  * 
  * 6. The ternary operator (conditional operator) is a shorthand for if-else statements
- * and takes three operands.
+ * and takes three operands. (a ? b : c)
  * 
  */
 
@@ -137,7 +137,7 @@ console.log(-negative); // prints => 5 (negates negative to positive)
 var result = -(2 + 3);
 console.log(result); // prints => -5
 
-// Ternary operator //
+// Ternary operator // (a ? b : c)
 var age = 20;
 var status = age >= 18 ? 'Adult' : 'Minor';
 console.log(status); // prints => Adult
