@@ -20,7 +20,7 @@
  * element. Looping backward means starting at the last index and decrementing.
  * 
  * 5. Looping over an object means iterating through its key-value pairs using a for-in
- * loop or other methods.
+ * loop.
  * 
  * 6. Counting up to a limit means starting at a number and incrementing until reaching
  * a specified maximum value.
@@ -80,5 +80,50 @@ while (index < message.length) {
 }
 
 // 3. loop over array (forward, backward)
+//forward
+var fruits = ['apple', 'banana', 'orange', 'grape'];
+
+for (var i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+
+//**Output:**
+
+//apple
+//banana
+//orange
+//grape
+
+//backward
+var fruits = ['apple', 'banana', 'orange', 'grape'];
+
+for (var i = fruits.length - 1; i >= 0; i--) {
+  console.log(fruits[i]);
+}
+
+
+//**Output:**
+
+//grape
+//orange
+//banana
+//apple
 
 // 4. loop over object
+var car = {
+  brand: 'Toyota',
+  model: 'Camry',
+  year: 2020
+};
+
+for (var key in car) {
+  console.log('The ' + key + ' is ' + car[key]);
+}
+
+
+//**Output:**
+
+//The brand is Toyota
+//The model is Camry
+//The year is 2020
